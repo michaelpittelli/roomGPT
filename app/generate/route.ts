@@ -57,6 +57,8 @@ body: JSON.stringify({
 
   let jsonStartResponse = await startResponse.json();
 
+console.log("Replicate response:", JSON.stringify(jsonStartResponse));
+  
   let endpointUrl = jsonStartResponse.urls.get;
 
   // GET request to get the status of the image restoration process & return the result when it's ready
