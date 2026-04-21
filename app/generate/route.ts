@@ -43,19 +43,14 @@ export async function POST(request: Request) {
       "Content-Type": "application/json",
       Authorization: "Token " + process.env.REPLICATE_API_KEY,
     },
-    body: JSON.stringify({
+body: JSON.stringify({
       version:
-        "854e8727697a057c525cdb45ab037f64ecca770a1769cc52287c2e56472a247b",
+        "76604bad559b96490033bde5f48a8c1b3b3b5e5c5d7a71f1ad54a9f5c23c045",
       input: {
         image: imageUrl,
-        prompt:
-          room === "Gaming Room"
-            ? "a room for gaming with gaming computers, gaming consoles, and gaming chairs"
-            : `a ${theme.toLowerCase()} ${room.toLowerCase()}`,
-        a_prompt:
-          "best quality, extremely detailed, photo from Pinterest, interior, cinematic photo, ultra-detailed, ultra-realistic, award-winning",
-        n_prompt:
-          "longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality",
+        prompt: "a golf simulator room with a large impact screen, projector mount, artificial turf hitting mat, dark walls, dramatic lighting, high end residential, photorealistic",
+        negative_prompt:
+          "lowres, watermark, banner, logo, text, deformed, blurry, out of focus, surreal, extra, ugly",
       },
     }),
   });
