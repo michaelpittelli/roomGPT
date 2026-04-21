@@ -76,7 +76,7 @@ console.log("Replicate response:", JSON.stringify(jsonStartResponse));
     let jsonFinalResponse = await finalResponse.json();
 
     if (jsonFinalResponse.status === "succeeded") {
-      restoredImage = jsonFinalResponse.output;
+      restoredImage = jsonFinalResponse.output[0];
     } else if (jsonFinalResponse.status === "failed") {
       break;
     } else {
