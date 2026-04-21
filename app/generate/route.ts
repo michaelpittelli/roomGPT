@@ -45,12 +45,11 @@ export async function POST(request: Request) {
     },
 body: JSON.stringify({
       version:
-        "76604baddc85b1b4616e1c6475eca080da339c8875bd4996705440484a6eac38",
+        "683d19dc312f7a9f0428b04429a9ccefd28dbf7785fef083ad5cf991b65f406f",
       input: {
         image: imageUrl,
         prompt: "a golf simulator room with a large impact screen, projector mount, artificial turf hitting mat, dark walls, dramatic lighting, high end residential, photorealistic",
-        negative_prompt:
-          "lowres, watermark, banner, logo, text, deformed, blurry, out of focus, surreal, extra, ugly",
+        num_inference_steps: 8,
       },
     }),
   });
