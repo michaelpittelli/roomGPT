@@ -45,7 +45,7 @@ export async function POST(request: Request) {
     },
 body: JSON.stringify({
       version:
-        "76604bad559b96490033bde5f48a8c1b3b3b5e5c5d7a71f1ad54a9f5c23c045",
+        "76604baddc85b1b4616e1c6475eca080da339c8875bd4996705440484a6eac38",
       input: {
         image: imageUrl,
         prompt: "a golf simulator room with a large impact screen, projector mount, artificial turf hitting mat, dark walls, dramatic lighting, high end residential, photorealistic",
